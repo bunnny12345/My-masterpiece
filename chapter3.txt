@@ -1,0 +1,108 @@
+it was the spring of hope, it was the winter of despair
+
+priya@Priyabrata MINGW64 ~/Documents/web development projects
+$ cd ..
+
+priya@Priyabrata MINGW64 ~/Documents
+$ cd ..
+
+priya@Priyabrata MINGW64 ~
+$ cd Desktop
+
+priya@Priyabrata MINGW64 ~/Desktop
+$ mkdir Story
+
+priya@Priyabrata MINGW64 ~/Desktop
+$ cd Story
+
+priya@Priyabrata MINGW64 ~/Desktop/Story
+$ ls
+
+priya@Priyabrata MINGW64 ~/Desktop/Story
+$ touch Chapter1.txt
+
+priya@Priyabrata MINGW64 ~/Desktop/Story
+$ code Chapter1.txt
+
+priya@Priyabrata MINGW64 ~/Desktop/Story
+$ git init
+Initialized empty Git repository in C:/Users/priya/Desktop/Story/.git/
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ ls -a
+./  ../  .git/  Chapter1.txt
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ git add Chapter1.txt
+
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Chapter1.txt
+
+
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ git commit -m complete chapter 1"
+
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ git log
+commit 49843c4f37eaa0ef811896c65507587c2fc1c452 (HEAD -> master)
+Author: Priyabrata Panda <priyabratapanda34710@gmail.com>
+Date:   Thu Oct 17 08:51:25 2024 +0530
+
+    complete chapter 1
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ touch chapter2.txt
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ touch chapter3.txt
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ code chapter2.txt
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ code chapter3.txt
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter2.txt // red color
+        chapter3.txt // red color means not added
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ git add chapter2.txt
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ git add chapter3.txt
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)    
+        new file:   chapter2.txt // green color
+        new file:   chapter3.txt // green color means added
+
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ git add . // to add new files all together
+
+priya@Priyabrata MINGW64 ~/Desktop/Story (master)      
+$ git commit -m "complete chapter 2 and 3"
+[master 5e080f5] complete chapter 2 and 3
+ 2 files changed, 0 insertions(+), 0 deletions(-)      
+ create mode 100644 chapter2.txt
+ create mode 100644 chapter3.txt
